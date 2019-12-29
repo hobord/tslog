@@ -1,0 +1,24 @@
+{
+  "name": "tslog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.1.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "winston": "^3.2.1"
+  }
+}
